@@ -1,0 +1,90 @@
+//Input values in string.
+#include<stdio.h>
+int main()
+{
+char x[100];
+fflush(stdin);
+gets (x);
+printf("%s",x);
+return 0;
+}
+
+
+
+
+
+// Input values in string using loop.
+#include<stdio.h>
+int main()
+{
+    int i;
+    char x[10];
+    for(i=0;i<10;i++)
+    {
+        scanf("%c",&x[i]);
+    }
+    for(i=0;x[i]!='\0';i++)
+    {
+        printf("%c",x[i]);
+    }
+    return 0;
+}
+
+
+
+
+// WAP to enter string from variable.
+#include<stdio.h>
+int main()
+{
+    char x[100];
+    gets (x);
+    puts (x);
+    return 0;
+}
+
+
+
+
+// WAP input from user and reverse the string.
+#include<stdio.h>
+int main()
+{
+    int i,count=0;
+    char x[10];
+    gets (x);
+    for(i=0;x[i]!='\0';i++)
+    {
+        count ++;
+    }
+    printf("Length of a word is %d\n",count);
+    for(i=count-1;i>=0;i--)
+    {
+        printf("%c",x[i]);
+    }
+    return 0;
+}
+
+
+
+
+
+// WAP to copy element of first array in second array.
+#include<stdio.h>
+int main()
+{
+    int i,count=0;
+    char x[100],y[100];
+    gets(x);
+    for(i=0;x[i]!='\0';i++)
+    {
+        count ++;
+    }
+    printf("Length of a word is %d\n",count);
+    for(i=0;i<count;i++)
+    {
+        y[i]=x[i];
+    }
+    printf("%s",y);
+    return 0;
+}
